@@ -1,8 +1,8 @@
 #Test againts this veresion of Node.js
-enviroment:
+environment:
   matrix:
     # node.js
-    - nodejs_veresion: "6"
+    - nodejs_version: "6"
 
 #Install scripts. (runs after repo cloning)
 Install:
@@ -11,9 +11,9 @@ Install:
   # install moduls
   - npm install
 
-  #Post-install test scripts.
+  # Post-install test scripts.
   test_script:
-  # Output yseful info for debugging
+  # Output yseful info for debugging.
   - node --version
   - npm --version
   # run tests
